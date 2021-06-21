@@ -1,0 +1,106 @@
+.user-control-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.user-input-container {
+    position: relative;
+}
+
+.search-box{
+    width:200px;
+    height:25px;
+    border: 2px solid black;
+    border-radius:5px;
+ 
+}
+
+.sortby-container{
+    width:200px;
+    height:25px;
+    border: 2px solid black;
+    border-radius:5px;
+}
+
+.userRepos{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-top:10px;
+    display: flex;
+}
+
+
+.userLable{
+    font-weight: bold;
+    height: 24px;
+}
+
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.lableContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-content{
+    z-index: 10;
+    position: absolute;
+    max-height:500px;
+    overflow: auto;
+    border:2px solid black;
+    border-top:0;   
+    border-radius:3px;
+    background: white;
+    cursor: pointer;
+    width:205px;
+    visibility: hidden;
+}
+
+.search-content.typeahad-visible{
+    visibility: visible;
+}
+
+.search-item-list{
+    padding: 0;
+}
+
+.search-item {
+    list-style: none;
+    padding:10px;
+}
+
+.search-item:hover {
+    background: #E7E9EB;
+}
+
+.text-elipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.repos-container{
+    height:calc(100vh - 50px);
+    overflow: auto;
+}
+.show-loader, .show-nodata {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.show-loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+}
+.full-height {
+    height: calc(100vh - 50px);
+}
